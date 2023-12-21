@@ -1,0 +1,118 @@
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: Moccasin;
+	}
+	h1 {
+		margin: 10px;
+		text-align: center;
+		font-family: Courier New;
+		font-weight: bold;
+		font-size: 175%; /*75% larger than dummy text*/
+		color: Maroon;
+	}
+	section {
+		position: relative;
+		padding: 15px;
+		width: 100%;
+	}
+	
+	div {
+		position: relative;
+		background-color: PapayaWhip;
+		border: 1px solid black;
+		width: 100%;
+		margin: auto;
+	}
+	
+	.dish1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: auto;
+		border: 1px solid black;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 125%; /*25% larger than dummy text*/
+		font-weight: bold;
+		background-color: LemonChiffon;
+		
+	}
+	.dish2 {
+		float: right;
+		color: black;
+		width: 100px;
+		padding: 5px;
+		margin: auto;
+		border: 1px solid black;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 125%; /*25% larger than dummy text*/
+		font-weight: bold;
+		background-color: LightCoral;
+		
+	}
+	.dish3 {
+		float: right;
+		color: black;
+		width: 100px;
+		padding: 5px;
+		margin: auto;
+		border: 1px solid black;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 125%; /*25% larger than dummy text*/
+		font-weight: bold;
+		background-color: MediumSeaGreen	;
+		
+	}
+	
+	.description {
+		padding: 5px;
+		border: none;
+		background-color: PapayaWhip;
+		font-family: Courier New;
+		color: black;
+		margin: 0px;
+		height: 200px;
+		overflow: auto;
+		clear: right;
+	}
+	
+	/*desktop*/
+	/*the width of the browser window is 992px and above*/
+	@media (min-width: 992px){
+		/*create 3 equal columns*/
+		.col-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*tablet*/
+	/*the width of the browser window is between 768px and 991px*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.col-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.col-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile*/
+	/*the width of the browser is equal to or less than 767px*/
+	@media (max-width: 767px){
+		/*Make three columns stack on top of each other*/
+		.col-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
