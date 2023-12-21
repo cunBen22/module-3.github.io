@@ -148,12 +148,8 @@ section {
   	padding-left: 25px;
 }
 
-.navbar-brand a:hover{
+.navbar-brand a:hover, .navbar-brand a:focus{
 	text-decoration: none; /*not to have any decoration*/
-}
-
-.navbar-brand a:focus{
-	color: firebrick;
 }
 
 .icon-bar{
