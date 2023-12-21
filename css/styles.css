@@ -1,0 +1,176 @@
+
+body {
+	font-size: 16px;
+	background-color: Moccasin;
+	font-family: Courier New, sans-serif;
+}
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
+section {
+		position: relative;
+		padding: 15px;
+		width: 100%;
+	}
+
+	div {
+		position: relative;
+		background-color: PapayaWhip;
+		border: 1px solid black;
+		width: 100%;
+		margin: auto;
+	}
+	
+	.menu-title
+	{
+		 margin-bottom: 15px;
+		 text-align: center;
+		 color: #ff4532;
+		 font-size: 50px;
+		 font-family: Courier New;
+		 font-weight: bold;
+		 color: Maroon;
+	}
+
+	.dish1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: auto;
+		border: 1px solid black;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 125%; /*25% larger than dummy text*/
+		font-weight: bold;
+		background-color: LemonChiffon;
+		
+	}
+	.dish2 {
+		float: right;
+		color: black;
+		width: 100px;
+		padding: 5px;
+		margin: auto;
+		border: 1px solid black;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 125%; /*25% larger than dummy text*/
+		font-weight: bold;
+		background-color: LightCoral;
+		
+	}
+	.dish3 {
+		float: right;
+		color: black;
+		width: 100px;
+		padding: 5px;
+		margin: auto;
+		border: 1px solid black;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 125%; /*25% larger than dummy text*/
+		font-weight: bold;
+		background-color: MediumSeaGreen	;
+		
+	}
+	
+	.description {
+		padding: 5px;
+		border: none;
+		background-color: PapayaWhip;
+		font-family: Courier New;
+		color: black;
+		margin: 0px;
+		height: 200px;
+		overflow: auto;
+		clear: right;
+	}
+
+	.back-to-top {
+    display: block;
+    text-align: left;
+    margin-left: 5px; /* Adjust margin as needed */
+    color: #007bff; /* Set the desired color */
+    text-decoration: none; /* Remove default underline */
+    font-size: 16px; /* Adjust font size as needed */
+	}
+
+	.back-to-top:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #004080; /* Change color on hover */
+	}
+	
+	/*desktop*/
+	/*the width of the browser window is 992px and above*/
+	@media (min-width: 992px){
+		/*create 3 equal columns*/
+		.col-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*tablet*/
+	/*the width of the browser window is between 768px and 991px*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.col-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.col-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile*/
+	/*the width of the browser is equal to or less than 767px*/
+	@media (max-width: 767px){
+		/*Make three columns stack on top of each other*/
+		.col-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
+
+.navbar-brand{
+ 	margin: 10px;
+	text-align: center;
+	font-family: 'Courier New', sans-serif; 	
+	font-weight: bold;
+	font-size: 175%; /*75% larger than dummy text*/
+	color: Maroon !important;
+  	padding-left: 25px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none; /*not to have any decoration*/
+}
+
+.icon-bar{
+	background-color: Maroon;
+	margin-top: 10px;
+}
+
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a{
+	color: #951C49;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+}
